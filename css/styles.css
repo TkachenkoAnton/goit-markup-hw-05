@@ -77,6 +77,11 @@ p {
   margin: 0;
 }
 
+img,
+a {
+  display: block;
+}
+
 .list {
   list-style: none;
   padding: 0;
@@ -85,10 +90,6 @@ p {
 
 .link {
   text-decoration: none;
-}
-
-img {
-  display: block;
 }
 
 /* Верхняя линия */
