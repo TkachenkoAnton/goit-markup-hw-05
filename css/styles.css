@@ -615,6 +615,8 @@ img {
 .filters-btn:focus {
   color: var(--primary-background-color);
   background-color: var(--activestate);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
 /* Примеры работ */
@@ -666,15 +668,34 @@ img {
   color: var(--primary-font-color);
 }
 
+.example__photodescription {
+  position: relative;
+}
+
 .example__about {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 63px;
+  padding-right: 24px;
+  padding-bottom: 63px;
+  padding-left: 24px;
+  opacity: 0;
   font-size: 18px;
   line-height: 1.56;
+  background-color: rgba(33, 150, 243, 0.9);
+  color: var(--primary-background-color);
 }
 
 .example__link:hover,
 .example__link:focus {
-  background-color: rgba(33, 150, 243, 0.9);
-  color: var(--primary-background-color);
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+.example__link:hover .example__about,
+.example__link:focus .example__about {
+  opacity: 1;
 }
