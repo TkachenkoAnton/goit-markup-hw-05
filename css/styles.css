@@ -117,6 +117,10 @@ img {
   align-items: center;
 }
 
+.navigation__item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .navigation__link,
 .contacts__link {
   font-weight: 500;
@@ -128,6 +132,7 @@ img {
 
 .navigation__link {
   display: block;
+  position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -136,8 +141,15 @@ img {
   color: var(--activestate);
 }
 
-.navigation__item:not(:last-child) {
-  margin-right: 50px;
+.current::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: 0;
+  background: var(--activestate);
+  border-radius: 2px;
 }
 
 .contacts__item:not(:last-child) {
