@@ -686,7 +686,6 @@ a {
   height: 100%;
   top: 0;
   left: 0;
-  opacity: 0;
   padding-top: 63px;
   padding-right: 24px;
   padding-bottom: 63px;
@@ -708,5 +707,4 @@ a {
 .example__link:hover .example__about,
 .example__link:focus .example__about {
   transform: translateY(0%);
-  opacity: 1;
 }
