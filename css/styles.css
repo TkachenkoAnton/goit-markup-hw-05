@@ -229,7 +229,7 @@ a {
   padding-bottom: 200px;
 }
 
-.main-headline {
+.herocontainer__headline {
   width: 696px;
   margin-bottom: 30px;
   margin-right: auto;
@@ -243,7 +243,7 @@ a {
   color: var(--h1-h3-headline);
 }
 
-.main-btn {
+.herocontainer__btn {
   display: block;
   padding-top: 10px;
   padding-right: 32px;
@@ -261,9 +261,10 @@ a {
   background-color: var(--activestate);
   color: var(--main-bottom-color);
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.main-btn:hover,
-.main-btn:focus {
+.herocontainer__btn:hover,
+.herocontainer__btn:focus {
   background-color: var(--main-button-hover);
 }
 
